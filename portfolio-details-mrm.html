@@ -5,31 +5,32 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <title>Portfolio Details - Medical Record Management</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo_white_large.png" rel="icon">
+  <link href="assets/img/logo_white_large.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Personal - v2.4.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Template Name: iPortfolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -37,78 +38,167 @@
 
 <body>
 
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/me.webp" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Federico Arona</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/federico-arona-595134163/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/itsfedefico/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        </div>          
+</br>
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
   <main id="main">
 
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
-        <div class="row">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Medical Record Management</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Medical Record Management</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Project Details</h2>
-            <div class="owl-carousel portfolio-details-carousel">
-              <img src="assets/img/portfolio/portfolio-details-mrm-1.jpg" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/portfolio-details-mrm-2.jpg" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/portfolio-details-mrm-3.jpg" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/portfolio-details-mrm-4.jpg" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/portfolio-details-mrm-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-mrm-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-mrm-2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-mrm-3.png" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-mrm-4.png" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-mrm-5.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-mrm-6.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-mrm-7.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Web App</li>
-              <li><strong>Client</strong>: Villa Chiara</li>
-              <li><strong>Project date</strong>: 01 July, 2020</li>
-              <li><strong>Project URL</strong>: <a href="http://mrmfrontend.herokuapp.com/">DEMO</a></li>
-            </ul>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>About Medical Record Management</h3>
+              <ul>
+                <li><strong>Category</strong>: Web App</li>
+                <li><strong>Client</strong>: Villa Chiara</li>
+                <li><strong>Project URL</strong>: <a href="http://mrmfrontend.herokuapp.com/">Medical Record Management</a></li>
+              </ul>
+            </div>
 
-            <p>
-              Developed using:</br>
-              - Laravel: a MVC PHP based framework</br>
-              - MySql Relational Database</br>
-              - React</br>
-            </br>
-              I worked on this project designing and implementing the structure of the Database. I also wrote the majority of the backend code.</br>
-            </br>
-              The Web App is a Medical Record Management System. The users have the abilities to add patient, add medical records, edit them, add clinic and nursing diaries and so on.
-              It is also present a basic User Management System, with the abilities to Add and delete User, change their roles and reset their passowrds.
-              The roles are managed by an RBAC implemented using Laravel Middlewares.</br>
-            </br>
-              Please note that the demo is still in development so you could face some issues. Plus, Heroku hosting sends to sleep the server when it's not used for a while, so you could experience a bigger loading time
-              the first time you access the link.</br>
-              Username: user</br>
-              Password: password</br>
-            </p>
           </div>
 
         </div>
 
+        <div class="portfolio-description">
+          <h2>The project</h2>
+          <p>
+            Leading the development of a medical record management web app for a prominent psychiatric clinic 
+            was a fulfilling endeavor that showcased my technical expertise and leadership skills. 
+          </br></br>
+          In this role, my responsibilities extended beyond coding; 
+          they encompassed understanding the clinic's specific needs and meticulously designing a 
+          solution that catered to their workflows.
+        </br></br>
+          Collaborating closely with clinic staff, I facilitated workshops to grasp the nuances of their processes, 
+          ensuring that the app seamlessly integrated into their daily routines. 
+        </br>
+          Moreover, given the sensitivity of medical data, I delved into legal regulations to guarantee that the app adhered to stringent data security and privacy standards.
+        </br></br>
+          The technology stack of PHP, MySQL database, and React was chosen strategically 
+          to provide a robust and scalable foundation for the app. 
+        </br></br>
+          My role as the tech lead involved orchestrating the efforts of a small group of skilled developers, 
+          guiding them through architectural decisions, coding standards, and best practices. 
+          </p>
+        </div>
+
       </div>
-    </div><!-- End Portfolio Details -->
+    </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-  </div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
